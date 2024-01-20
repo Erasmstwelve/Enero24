@@ -9,6 +9,8 @@ def generar_contraseña(longitud=8): #no estaba definida la variablle generar_co
     #dos variables en string 
     caracteres = string.ascii_letters + string.digits + string.punctuation
     contraseña = ''.join(random.choice(caracteres) for _ in range(longitud))
+    #return devuelve un valor
     return contraseña #corregi "retunr" por return, mal escrita.
 
+#print me imprime el valor 
 print(generar_contraseña())
